@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio gallary</title>
-    <style>
-        * {
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio gallary</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
 
-}
+    }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
 
-.row {
-  margin: 8px -16px;
-}
+    .row {
+      margin: 8px -16px;
+    }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-    </style>
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="main">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8">
+      <div class="main">
 
         <h1>gallary</h1>
         <hr>
-        
+
         <h2>PORTFOLIO</h2>
         <p></p>
-        
+
         <!-- Portfolio Gallery Grid -->
-        <div class="row">
+        <div class="col">
           <div class="column">
             <div class="content">
               <img src="images/prop1.png" alt="" style="width:100%">
-              
+
             </div>
           </div>
           <div class="column">
@@ -97,13 +102,13 @@ h1 {
           <div class="column">
             <div class="content">
               <img src="images/prop3.png" alt="" style="width:100%">
-            
+
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="images/prop4.png" alt="" style="width:100%">
-             
+
             </div>
           </div>
         </div>
@@ -111,7 +116,7 @@ h1 {
           <div class="column">
             <div class="content">
               <img src="images/prop5.jpg" alt="" style="width:100%">
-              
+
             </div>
           </div>
           <div class="column">
@@ -122,13 +127,13 @@ h1 {
           <div class="column">
             <div class="content">
               <img src="images/prop7.jpg" alt="" style="width:100%">
-            
+
             </div>
           </div>
           <div class="column">
             <div class="content">
               <img src="images/prop8.jpg" alt="" style="width:100%">
-             
+
             </div>
           </div>
         </div>
@@ -136,7 +141,7 @@ h1 {
           <div class="column">
             <div class="content">
               <img src="images/prop9.jpg" alt="" style="width:100%">
-              
+
             </div>
           </div>
           <div class="column">
@@ -144,15 +149,14 @@ h1 {
               <img src="images/prop10.jpg" alt="" style="width:100%">
             </div>
           </div>
-          
+
         </div>
-        
-        <div class="content">
-          <img src="" alt="" style="width:100%">
-          
-        </div>
-        
+
         <!-- END MAIN -->
-        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

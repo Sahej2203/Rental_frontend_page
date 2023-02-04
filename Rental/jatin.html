@@ -1,35 +1,47 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Gallery</title>
-  <style type="text/css">
-    * {
-      margin: 0%;
-      padding: 0%;
-      box-sizing: border-box;
-    }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <style>
+      body {
+        background: #f4f4f4;
+      }
 
-    .container {
-      min-height: 80vh;
-      display: flex;
-      justify-content: space-evenly;
-      gap: 10px;
-      background: linear-gradient(to right, white, white);
-    }
+      .banner {
+        background: #012970;
+      }
+      .footer {
+        font-family: 'Open Sans';
+        padding: 10px 0;
+        font-size: 14px;
+        transition: all 0.3s;
+        text-align: center;
+      }
+      
+      .header {
+          transition: all 0.5s;
+          font-family: 'Open Sans';
+          z-index: 997;
+          height: 60px;
+          box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+          background-color: #fff;
+          padding-left: 20px;
+      }
 
-    .left-image { 
-      flex-basis: 50%;
-      height: 50%;
-    }
-
-    .left-image:hover {
-      cursor: pointer;
-    }
-
+      .logo span {
+          font-size: 26px;
+          font-weight: 700;
+          color: #012970;
+          font-family: "Nunito", sans-serif;
+      }
+      
     .gallery {
-      flex-basis: 100%;
-      height: 700px;
+      flex-basis: 90%;
+      height: 600px;
       display: grid;
       gap: 10px;
       grid-template-columns: repeat(3, 1fr);
@@ -41,43 +53,70 @@
 
     .box {
       background-size: cover;
-      height: 100%
-      width :100%
+      height: 100%;
+      width :100%;
       margin: 10%;
-    }
-    
-    
-    
    
+    }
+
+    .box {
+        transition: all 0.2s linear;
+        
+      }
+
+      .box:hover {
+        transform: scale(0.5);
+      }
+    
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="left-image">
-      <img src="n.jpg" alt="" width="100%">
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center">
+        <span>Rental Application</span>
+      </a>
     </div>
-    <div class="gallery">
-
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop1.png);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop2.png);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop3.png);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop4.png);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop5.jpg);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop7.jpg);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop8.jpg);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop9.jpg);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop10.jpg);"> </div>
-      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop6.jpg);"> </div>
-      <br>
+ </header>
+  
+  
+  <div class="row">
+    <div class="col-4">
+      <div class="container-fluid">
+        <div class="row py-4">
+            <img src="images/map.png" style="height:600px;" class="img-fluid" style="border-radius: 2rem;" alt="Responsive image">
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
 
-  <script>
-   
-  </script>
+    <div class="col-8">
+          <div class="container-fluid py-4">
+         
+            <div class="gallery">
 
+              <div class="box" style="background-image: url(images/prop1.png);"> </div>
+              <div class="box" style="background-image: url(images/prop2.png);"> </div>
+              <div class="box" style="background-image: url(images/prop3.png);"> </div>
+              <div class="box" style="background-image: url(images/prop4.png);"> </div>
+              <div class="box" style="background-image: url(images/prop5.jpg);"> </div>
+              <div class="box" style="background-image: url(images/prop7.jpg);"> </div>
+              <div class="box" style="background-image: url(images/prop8.jpg);"> </div>
+              <div class="box" style="background-image: url(images/prop9.jpg);"> </div>
+              <div class="box" style="background-image: url(images/prop10.jpg);"> </div>
+              <div class="box" style="background-image: url(images/prop6.jpg);" ></div>
+     
+          </div>
+    </div>
+</div>
+
+  <footer id="footer" class="footer" style="padding-top: 3rem;">
+          <div class="copyright">
+            © Copyright <strong><span>A2ZSolutions LLC</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="http://infinity-ventures.com/" target="_blank">Infinity Ventures (India) Pvt Ltd</a>
+          </div>
+</footer>
 </body>
-
 </html>

@@ -2,160 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio gallary</title>
-  <style>
+  <title>Gallery</title>
+  <style type="text/css">
     * {
+      margin: 0%;
+      padding: 0%;
       box-sizing: border-box;
     }
 
-    body {
-      background-color: #f1f1f1;
-      padding: 20px;
-      font-family: Arial;
+    .container {
+      min-height: 80vh;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      background: linear-gradient(to right, white, white);
     }
 
-    /* Center website */
-    .main {
-      max-width: 1000px;
-      margin: auto;
-
+    .left-image { 
+      flex-basis: 50%;
+      height: 50%;
     }
 
-    h1 {
-      font-size: 50px;
-      word-break: break-all;
+    .left-image:hover {
+      cursor: pointer;
     }
 
-    .row {
-      margin: 8px -16px;
+    .gallery {
+      flex-basis: 100%;
+      height: 700px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Add padding BETWEEN each column (if you want) */
-    .row,
-    .row>.column {
-      padding: 8px;
+    .box:hover {
+      cursor: pointer;
     }
 
-    /* Create four equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 25%;
+    .box {
+      background-size: cover;
+      height: 100%
+      width :100%
+      margin: 10%;
     }
-
-    /* Clear floats after rows */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Content */
-    .content {
-      background-color: white;
-      padding: 10px;
-    }
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 900px) {
-      .column {
-        width: 50%;
-      }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-      }
-    }
+    
+    
+    
+   
   </style>
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-8">
-      <div class="main">
+  <div class="container">
+    <div class="left-image">
+      <img src="n.jpg" alt="" width="100%">
+    </div>
+    <div class="gallery">
 
-        <h1>gallary</h1>
-        <hr>
-
-        <h2>PORTFOLIO</h2>
-        <p></p>
-
-        <!-- Portfolio Gallery Grid -->
-        <div class="col">
-          <div class="column">
-            <div class="content">
-              <img src="images/prop1.png" alt="" style="width:100%">
-
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop2.png" alt="" style="width:100%">
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop3.png" alt="" style="width:100%">
-
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop4.png" alt="" style="width:100%">
-
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="images/prop5.jpg" alt="" style="width:100%">
-
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop6.jpg" alt="" style="width:100%">
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop7.jpg" alt="" style="width:100%">
-
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop8.jpg" alt="" style="width:100%">
-
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="images/prop9.jpg" alt="" style="width:100%">
-
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/prop10.jpg" alt="" style="width:100%">
-            </div>
-          </div>
-
-        </div>
-
-        <!-- END MAIN -->
-      </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop1.png);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop2.png);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop3.png);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop4.png);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop5.jpg);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop7.jpg);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop8.jpg);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop9.jpg);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop10.jpg);"> </div>
+      <div class="box" style="background-image: url(rental/Rental_frontend_page/Rental/images/prop6.jpg);"> </div>
+      <br>
     </div>
   </div>
+  </div>
+
+  <script>
+   
+  </script>
 
 </body>
 

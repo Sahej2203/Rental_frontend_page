@@ -3,15 +3,22 @@
 
 <head>
 
-    <title>Rental Application</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Property Details</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        * {
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+      --panel : rgb(210, 240, 250);
+      --blue :#3f4f87;
       margin: 0%;
       padding: 0%;
       box-sizing: border-box;
+    }
+
+    body {
+      background-color: #e5e6ea;
     }
 
     .banner {
@@ -31,15 +38,30 @@
       font-family: 'Open Sans';
       z-index: 997;
       height: 60px;
+      /* width: 85%; */
+      /* margin-left: 100px; */
       box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
-      background-color: #fff;
-      padding-left: 20px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .headeroval {
+      transition: all 0.5s;
+      font-family: 'Open Sans';
+      z-index: 997;
+      height: 58px;
+      width: 92%;
+      /* margin-top: 5px; */
+      /* margin-left: 100px; */
+      box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+      background-color: var(--blue);
+      /* padding-left: 20px; */
+      border-radius: 50px;
     }
 
     .logo span {
-      font-size: 26px;
+      font-size: 40px;
       font-weight: 700;
-      color: #012970;
+      color: white;
       font-family: "Nunito", sans-serif;
     }
 
@@ -50,15 +72,12 @@
 
     }
 
-    .left-image {
-      flex-basis: 50%;
-      height: 20%;
-      width: 50%;
-      border: black,20px;
-      border-radius: 20%;
+    img {
+      border-radius: 20px;
+      margin-left: 90px;
     }
 
-    .left-image:hover {
+    img:hover {
       cursor: pointer;
       transform: scale(1.05);
     }
@@ -69,14 +88,16 @@
       display: grid;
       gap: 10px;
       grid-template-columns: repeat(3, 1fr);
+      margin-left: 80px;
     }
 
     .box:hover {
       cursor: pointer;
     }
+
     .box:hover {
-        transform: scale(1.2);
-      }
+      transform: scale(1.2);
+    }
 
     .box {
       background-size: cover;
@@ -86,148 +107,225 @@
       border: black;
       border-radius: 10%;
     }
-        h5 {
-            color: rgb(9, 8, 8);
-            font-size: 18px;
-        }
-        .innerBox{
-            background:white;
-            border-radius: 10px; 
-            margin:0px 20px 5px 10px ;
-            width: 97%;
-            margin-left: 30px;
-            height: 60%;
-        }
-        .pannel{
-            /* background-color:rgb(55, 66, 125); */
-            /* background-color: rgb(199, 199, 199); */
-            background-color: rgb(34, 40, 88);
-            border: black;
-            border-radius:10px;
-            width: 99%;
-            
-            margin-left: 10px;
-        }
-        .Heading{
-            color:rgb(255, 255, 255);
-            padding-left:30px ;
 
-        }
-    </style>
+    h5 {
+      color: rgb(58, 58, 58);
+      font-size: 18px;
+      font-family: 'Open Sans';
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    .innerBox {
+      background: rgb(248, 248, 248);
+      border-radius: 15px;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 1%;
+      height: 60%;
+      padding-top: 10px;
+    }
+
+    .pannel1 {
+
+      background-color: var(--panel);
+      border: black;
+      border-radius: 25px;
+      width: 86%;
+      margin: auto;
+      box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
+    }
+
+    .pannel {
+
+      background-color: rgb(49, 94, 152);
+      border: black;
+      border-radius: 25px;
+      width: 86%;
+      margin: auto;
+      box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
+    }
+
+    .Heading {
+      color: rgb(47, 75, 112);
+      padding-left: 30px;
+      padding-top: 10px;
+      font-size: 30px;
+      font-family: "Nunito", sans-serif;
+      text-align: left;
+    }
+
+    .pricetag {
+      background-color: var(--blue);
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+    /* .whitebox{
+      background-color: aliceblue;
+      width:90%;
+      height :100%
+    } */
+  </style>
 </head>
 
 <body>
-    <header id="header" class="header fixed-top d-flex align-items-center">
+
+
+  <!-- <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
           <a href="#" class="logo d-flex align-items-center">
-            <span>Rental Application</span>
+            <span>Property Details</span>
           </a>
         </div>
-      </header>
-      <br><br><br>
-    <div class="row pannel">
+      </header> -->
+  <center>
+
+
+    <header id="header" class="header fixed-top ">
+      <div class="headeroval align-items-center justify-content-between">
+        <p class="logo">
+          <span>Property Details</span>
+        </p>
+      </div>
+    </header>
+    </center>
+
+    <br><br><br>
+    <center>
+    <div class="whitebox">
+      <center>
+      <div class="row pannel1">
         <div>
-            <h1 class="Heading">Property Information</h1> 
+          <p class="Heading">Property Information</p>
         </div>
         <div class="row innerBox">
+          <div class="row">
             <div class="col-sm-3">
-                <h4 style="padding:5px 20px 5px 20px ;">Home</h4>
+              <!-- <h4 align="left" style="margin-left: 80px;" ;>Home</h4> -->
             </div>
-            <div class="row">
+          </div>
+          <div class="row">
 
-                <div class="col-sm-5">
-                    <h5 >900,A North Street,Arlington,CA-90002,US</h5><br><br>
-                    <div class="row">
-                        <div class="col">
-                            <h5>Bathrooms<br>1</h5>
-                        </div>
-                        <div class="col">
-                            <h5>Furnishing <br>Yes</h5>
-                        </div>
-                    </div>
-
+            <div class="col-sm-4">
+              <h5><i class="fas fa-map-marker-alt"></i> 900,A North Street,Arlington,CA-90002,US</h5><br>
+              <div class="row">
+                <div class="col">
+                  <h5><i class="fas fa-couch fa-xs ml-1"></i> Furnished</h5>
+                  
                 </div>
-                <div class="col-sm-3 ">
-                    <div class="row">
-                        <h5>Area<br>1000 Sq Ft</h5>
-                    </div><br>
-                    <div class="row">
-                        <h5>Parking<br>1 covered</h5>
-                    </div>
+                <div class="col">
+                  <h5>Type : Home</h5>
                 </div>
-                <div class="col-sm-2 ">
-                    <div class="row">
-                        <h5>Bedrooms<br>2</h5>
-                    </div><br>
-                    <div class="row">
-                        <h5>Rental Rate<br>Monthly</h5>
-                    </div>
-                </div>
-                <div class="col-sm-2"><br>
-                    <div style="background-color: rgb(34, 40, 88); width: 50%; border-radius: 10px;">
-
-                        <h2 align = "center"style="color:aliceblue;">900$</h2>
-                    </div>
-
-                </div>
+              </div>
 
             </div>
+            <div class="col-sm-2 ">
+              <div class="row">
+                <h5><i class="fas fa-expand "></i> 1000 Sq Ft</h5>
+              </div><br>
+              <div class="row">
+                <h5><i class="fas fa-car fa-xs ml-1"></i> 1 Parking</h5>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="row">
+                <h5><i class="fas fa-bed fa-xs ml-1"></i> 2 Bedrooms</h5>
+              </div><br>
+              <div class="row">
+                <h5>Parking type : Garage</h5>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="row">
+                <h5><i class="fas fa-shower fa-xs ml-1"></i> 1 Bathrooms</h5> 
+              </div><br>
+              <div class="row">
+                <h5>Rental Rate : Monthly</h5>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <center>
+                <div class="row">
+                  <div class="pricetag">
+                    <h2 style="color:aliceblue;">900$</h2>
+                  </div>
+                </div>
+              </center>
+              
+            </div>
 
-            <!-- <h2>Property Information</h2><br> -->
-        </div>
-    </div>
-    <br>
-    <div class="container1">
-        <div class="left-image">
-          <img src="./images/map.png" alt="" width="100%">
-        </div>
-        <div class="gallery">
-    
-          <div class="box" style="background-image: url(./images/prop1.png);"> </div>
-          <div class="box" style="background-image: url(./images/prop2.png);"> </div>
-          <div class="box" style="background-image: url(./images/prop3.png);"> </div>
-          <div class="box" style="background-image: url(./images/prop4.png);"> </div>
-          <div class="box" style="background-image: url(./images/prop5.jpg);"> </div>
-          <div class="box" style="background-image: url(./images/prop7.jpg);"> </div>
-          <div class="box" style="background-image: url(./images/prop8.jpg);"> </div>
-          <div class="box" style="background-image: url(./images/prop9.jpg);"> </div>
-          <div class="box" style="background-image: url(./images/prop10.jpg);"> </div>
-          <div class="box" style="background-image: url(./images/prop6.jpg);"> </div>
+          </div>
+
+          <!-- <h2>Property Information</h2><br> -->
         </div>
       </div>
-      <br><br>
-    <div class="row pannel">
-        <div >
-            <h1 class="Heading">Contact Us</h1>
+    </center>
+
+  <br>
+  <div class="row">
+    <div class="col-5">
+      <div class="container-fluid">
+        <div class="row py-4">
+          <img src="images/map.png" style="height:600px;" class="img-fluid" style="border-radius: 2rem;"
+            alt="Responsive image">
         </div>
-        <div class="row innerBox" >
-            
-            <form>
-                <div class="row">
-                    <br>
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-2">
-                        <br>
-                        <h3>Email </h3>
-                        <br>
-                    </div>
-                    <div class="col-sm-4">
-                        <br>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                        <br>
-                    </div>
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-2">
-                        <br>
-                        <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Request</button>
-                        <br>
-                    </div>
-                </div>
-            </form>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="gallery">
+
+        <div class="box" style="background-image: url(./images/prop1.png);"> </div>
+        <div class="box" style="background-image: url(./images/prop2.png);"> </div>
+        <div class="box" style="background-image: url(./images/prop3.png);"> </div>
+        <div class="box" style="background-image: url(./images/prop4.png);"> </div>
+        <div class="box" style="background-image: url(./images/prop5.jpg);"> </div>
+        <div class="box" style="background-image: url(./images/prop7.jpg);"> </div>
+        <div class="box" style="background-image: url(./images/prop8.jpg);"> </div>
+        <div class="box" style="background-image: url(./images/prop9.jpg);"> </div>
+        <div class="box" style="background-image: url(./images/prop10.jpg);"> </div>
+        <div class="box" style="background-image: url(./images/prop6.jpg);"> </div>
+      </div>
+    </div>
+
+
+
+
+    <center>
+      <div class="row pannel1">
+        <div>
+          <p class="Heading">Contact Us</p>
+        </div>
+        <div class="row innerBox">
+
+          <form>
+            <div class="row">
+              <br>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-2">
+                <br>
+                <h3>Email </h3>
+                <br>
+              </div>
+              <div class="col-sm-4">
+                <br>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <br>
+              </div>
+              <!-- <div class="col-sm-0"></div> -->
+              <div class="col-sm-4">
+                <br>
+                <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Request</button>
+                <br>
+              </div>
+            </div>
+          </form>
 
         </div>
-    </div>
-    <footer id="footer" class="footer" style="padding-top: 3rem;">
+      </div>
+      <footer id="footer" class="footer" style="padding-top: 3rem;">
         <div class="copyright">
           © Copyright <strong><span>A2ZSolutions LLC</span></strong>. All Rights Reserved
         </div>
@@ -235,6 +333,9 @@
           Designed by <a href="http://infinity-ventures.com/" target="_blank">Infinity Ventures (India) Pvt Ltd</a>
         </div>
       </footer>
+    </center>
+  </div>
+</center>
 </body>
 
 </html>

@@ -64,50 +64,54 @@
       color: white;
       font-family: "Nunito", sans-serif;
     }
-
-    .container1 {
-      min-height: 50vh;
-      display: flex;
-      gap: 10px;
-
+    .xyz{
+      margin-left: 42px;
     }
-
     img {
       border-radius: 20px;
-      margin-left: 90px;
+      margin-left: 45px;
+      margin-bottom: 10px;
     }
 
     img:hover {
       cursor: pointer;
-      transform: scale(1.05);
     }
-
-    .gallery {
-      flex-basis: 90%;
-      height: 600px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(3, 1fr);
-      margin-left: 80px;
+    .item{
+        transition: .5s ease-in-out;    
     }
-
-    .box:hover {
+    /*.row .item:nth-child(1n+7){
+      max-height: 0;
+      opacity: 0;
+      transition: 0.2s ease-in;
+    }
+    .row .btn-area{
+      display: block;
+      background: #7f2a4b;
+      color: #fff;
       cursor: pointer;
+      text-align: center;
+      font-weight: 900;
+      width: 180px;
+      line-height: 50px;
+      margin: 50px auto 0;
+      border-radius: 50px;
     }
-
-    .box:hover {
-      transform: scale(1.2);
+    .row .btn-area .btn2{
+      display: none;
     }
-
-    .box {
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-      margin: 10%;
-      border: black;
-      border-radius: 10%;
+    .row #btnbox{
+      display: none;
     }
-
+    .row #btnbox:checked~item:nth-child(1n+7){
+      max-height: 1000px;
+      opacity: 1;
+      transition: 0.5s ease;
+    }*/
+   
+    
+    .item:hover{
+        filter: brightness(60%);
+    }
     h5 {
       color: rgb(58, 58, 58);
       font-size: 18px;
@@ -264,35 +268,83 @@
       </div>
     </center>
 
-  <br>
-  <div class="row">
-    <div class="col-5">
-      <div class="container-fluid">
-        <div class="row py-4">
-          <img src="images/map.png" style="height:600px;" class="img-fluid" style="border-radius: 2rem;"
-            alt="Responsive image">
+    <br>
+    <div class="row">
+      <div class="col-5">
+        <div class="container-fluid">
+          <div class="row py-4">
+            <div class="xyz">
+            <img src="images/map.png" style="height:655px; width: 640px;" class="img-fluid" style="border-radius: 2rem;"
+              alt="Responsive image">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-6">
-      <div class="gallery">
+      <div class="col-6 ">
+          <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="item col-sm-6 col-md-4 mb-3">
+                  <a href="images/prop1.png"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop1.png" width="100%" height="100%" alt="image">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop2.png"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop2.png" width="100%" height="100%" alt="image">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop3.png"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop3.png" width="100%" height="100%" alt="image">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop4.png"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop4.png" width="100%" height="100%" alt="imag">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop5.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop5.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop6.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop6.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div> 
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop7.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop7.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop8.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop8.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop9.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop9.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/prop10.jpg"  class="fancybox" data-fancybox="gallery1">
+                        <img src="images/prop10.jpg" width="100%" height="100%" alt="">
+                     </a>   
+                </div>
+                <!--<label for="btnbox" class="btn-area">
+                  <span class="btn1">VIEW MORE</span>
+                  <span class="btn2">VIEW LESS</span>
+               </label>-->
+            </div>
+           
+           
+        </div>
 
-        <div class="box" style="background-image: url(./images/prop1.png);"> </div>
-        <div class="box" style="background-image: url(./images/prop2.png);"> </div>
-        <div class="box" style="background-image: url(./images/prop3.png);"> </div>
-        <div class="box" style="background-image: url(./images/prop4.png);"> </div>
-        <div class="box" style="background-image: url(./images/prop5.jpg);"> </div>
-        <div class="box" style="background-image: url(./images/prop7.jpg);"> </div>
-        <div class="box" style="background-image: url(./images/prop8.jpg);"> </div>
-        <div class="box" style="background-image: url(./images/prop9.jpg);"> </div>
-        <div class="box" style="background-image: url(./images/prop10.jpg);"> </div>
-        <div class="box" style="background-image: url(./images/prop6.jpg);"> </div>
+
+
       </div>
-    </div>
-
-
-
-
     <center>
       <div class="row pannel1">
         <div>

@@ -4,14 +4,17 @@
 <head>
 
   <title>Property Details</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <style>
     * {
-      --panel : rgb(210, 240, 250);
-      --blue :#3f4f87;
+      --panel: rgb(210, 240, 250);
+      --blue: #3f4f87;
       margin: 0%;
       padding: 0%;
       box-sizing: border-box;
@@ -59,14 +62,16 @@
     }
 
     .logo span {
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 700;
       color: white;
       font-family: "Nunito", sans-serif;
     }
-    .xyz{
+
+    .xyz {
       margin-left: 42px;
     }
+
     img {
       border-radius: 20px;
       margin-left: 45px;
@@ -76,9 +81,11 @@
     img:hover {
       cursor: pointer;
     }
-    .item{
-        transition: .5s ease-in-out;    
+
+    .item {
+      transition: .5s ease-in-out;
     }
+
     /*.row .item:nth-child(1n+7){
       max-height: 0;
       opacity: 0;
@@ -107,11 +114,12 @@
       opacity: 1;
       transition: 0.5s ease;
     }*/
-   
-    
-    .item:hover{
-        filter: brightness(60%);
+
+
+    .item:hover {
+      filter: brightness(60%);
     }
+
     h5 {
       color: rgb(58, 58, 58);
       font-size: 18px;
@@ -167,6 +175,7 @@
       margin-top: 10px;
       margin-left: 40px;
     }
+
     /* .whitebox{
       background-color: aliceblue;
       width:90%;
@@ -191,203 +200,204 @@
     <header id="header" class="header fixed-top ">
       <div class="headeroval align-items-center justify-content-between">
         <p class="logo">
-          <span>Property Details</span>
+          <span>900,A North Street,Arlington,CA-90002,US</span>
         </p>
       </div>
     </header>
-    </center>
+  </center>
 
-    <br><br><br>
-    <center>
+  <br><br><br>
+  <center>
     <div class="whitebox">
       <center>
-      <div class="row pannel1">
-        <div>
-          <p class="Heading">Property Information</p>
-        </div>
-        <div class="row innerBox">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- <h4 align="left" style="margin-left: 80px;" ;>Home</h4> -->
-            </div>
+        <div class="row pannel1">
+          <div>
+            <p class="Heading">Property Information</p>
           </div>
-          <div class="row">
+          <div class="row innerBox">
+            <div class="row">
+              <div class="col-sm-3">
+                <!-- <h4 align="left" style="margin-left: 80px;" ;>Home</h4> -->
+              </div>
+            </div>
+            <div class="row">
 
-            <div class="col-sm-4">
-              <h5><i class="fas fa-map-marker-alt"></i> 900,A North Street,Arlington,CA-90002,US</h5><br>
-              <div class="row">
-                <div class="col">
-                  <h5><i class="fas fa-couch fa-xs ml-1"></i> Furnished</h5>
-                  
-                </div>
-                <div class="col">
-                  <h5>Type : Home</h5>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-sm-2 ">
-              <div class="row">
-                <h5><i class="fas fa-expand "></i> 1000 Sq Ft</h5>
-              </div><br>
-              <div class="row">
-                <h5><i class="fas fa-car fa-xs ml-1"></i> 1 Parking</h5>
-              </div>
-            </div>
-            <div class="col-sm-2 ">
-              <div class="row">
-                <h5><i class="fas fa-bed fa-xs ml-1"></i> 2 Bedrooms</h5>
-              </div><br>
-              <div class="row">
-                <h5>Parking type : Garage</h5>
-              </div>
-            </div>
-            <div class="col-sm-2 ">
-              <div class="row">
-                <h5><i class="fas fa-shower fa-xs ml-1"></i> 1 Bathrooms</h5> 
-              </div><br>
-              <div class="row">
-                <h5>Rental Rate : Monthly</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <center>
+              <div class="col-sm-2">
+                <!-- <h5><i class="fas fa-map-marker-alt"></i> 900,A North Street,Arlington,CA-90002,US</h5><br> -->
                 <div class="row">
-                  <div class="pricetag">
-                    <h2 style="color:aliceblue;">900$</h2>
-                  </div>
+
+                  <h5><i class="fas fa-couch fa-xs ml-1"></i> Furnished</h5>
+
+
+                </div><br>
+                <div class="row">
+                  <h5>Type : Home</h5>
+
                 </div>
-              </center>
-              
+
+              </div>
+              <div class="col-sm-2 ">
+                <div class="row">
+                  <h5><i class="fas fa-expand "></i> 1000 Sq Ft</h5>
+                </div><br>
+                <div class="row">
+                  <h5><i class="fas fa-car fa-xs ml-1"></i> 1 Parking</h5>
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="row">
+                  <h5><i class="fas fa-bed fa-xs ml-1"></i> 2 Bedrooms</h5>
+                </div><br>
+                <div class="row">
+                  <h5>Parking type : Garage</h5>
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="row">
+                  <h5><i class="fas fa-shower fa-xs ml-1"></i> 1 Bathrooms</h5>
+                </div><br>
+                <div class="row">
+                  <h5>Rental Rate : Monthly</h5>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <center>
+                  <div class="row">
+                    <div class="pricetag">
+                      <h2 style="color:aliceblue;">900$</h2>
+                    </div>
+                  </div>
+                </center>
+
+              </div>
+
             </div>
 
+            <!-- <h2>Property Information</h2><br> -->
           </div>
-
-          <!-- <h2>Property Information</h2><br> -->
         </div>
-      </div>
-    </center>
+      </center>
 
-    <br>
-    <div class="row">
-      <div class="col-5">
-        <div class="container-fluid">
-          <div class="row py-4">
-            <div class="xyz">
-            <img src="images/map.png" style="height:655px; width: 640px;" class="img-fluid" style="border-radius: 2rem;"
-              alt="Responsive image">
+      <br>
+      <div class="row">
+        <div class="col-5">
+          <div class="container-fluid">
+            <div class="row py-4">
+              <div class="xyz">
+                <img src="images/map.png" style="height:655px; width: 640px;" class="img-fluid"
+                  style="border-radius: 2rem;" alt="Responsive image">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 ">
+        <div class="col-6 ">
           <div class="container-fluid">
             <div class="row mt-4">
-                <div class="item col-sm-6 col-md-4 mb-3">
-                  <a href="images/prop1.png"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop1.png" width="100%" height="100%" alt="image">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop2.png"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop2.png" width="100%" height="100%" alt="image">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop3.png"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop3.png" width="100%" height="100%" alt="image">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop4.png"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop4.png" width="100%" height="100%" alt="imag">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop5.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop5.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop6.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop6.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div> 
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop7.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop7.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop8.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop8.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop9.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop9.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div>
-                <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/prop10.jpg"  class="fancybox" data-fancybox="gallery1">
-                        <img src="images/prop10.jpg" width="100%" height="100%" alt="">
-                     </a>   
-                </div>
-                <!--<label for="btnbox" class="btn-area">
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop1.png" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop1.png" width="100%" height="100%" alt="image">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop2.png" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop2.png" width="100%" height="100%" alt="image">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop3.png" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop3.png" width="100%" height="100%" alt="image">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop4.png" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop4.png" width="100%" height="100%" alt="imag">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop5.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop5.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop6.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop6.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop7.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop7.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop8.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop8.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop9.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop9.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="images/prop10.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="images/prop10.jpg" width="100%" height="100%" alt="">
+                </a>
+              </div>
+              <!--<label for="btnbox" class="btn-area">
                   <span class="btn1">VIEW MORE</span>
                   <span class="btn2">VIEW LESS</span>
                </label>-->
             </div>
-           
-           
+
+
+          </div>
+
+
+
         </div>
-
-
-
-      </div>
-    <center>
-      <div class="row pannel1">
-        <div>
-          <p class="Heading">Contact Us</p>
-        </div>
-        <div class="row innerBox">
-
-          <form>
-            <div class="row">
-              <br>
-              <div class="col-sm-2"></div>
-              <div class="col-sm-2">
-                <br>
-                <h3>Email </h3>
-                <br>
-              </div>
-              <div class="col-sm-4">
-                <br>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                <br>
-              </div>
-              <!-- <div class="col-sm-0"></div> -->
-              <div class="col-sm-4">
-                <br>
-                <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Request</button>
-                <br>
-              </div>
+        <center>
+          <div class="row pannel1">
+            <div>
+              <p class="Heading">Contact Us</p>
             </div>
-          </form>
+            <div class="row innerBox">
 
-        </div>
+              <form>
+                <div class="row">
+                  <br>
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-2">
+                    <br>
+                    <h3>Email </h3>
+                    <br>
+                  </div>
+                  <div class="col-sm-4">
+                    <br>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <br>
+                  </div>
+                  <!-- <div class="col-sm-0"></div> -->
+                  <div class="col-sm-4">
+                    <br>
+                    <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Request</button>
+                    <br>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <footer id="footer" class="footer" style="padding-top: 3rem;">
+            <div class="copyright">
+              © Copyright <strong><span>A2ZSolutions LLC</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed by <a href="http://infinity-ventures.com/" target="_blank">Infinity Ventures (India) Pvt Ltd</a>
+            </div>
+          </footer>
+        </center>
       </div>
-      <footer id="footer" class="footer" style="padding-top: 3rem;">
-        <div class="copyright">
-          © Copyright <strong><span>A2ZSolutions LLC</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          Designed by <a href="http://infinity-ventures.com/" target="_blank">Infinity Ventures (India) Pvt Ltd</a>
-        </div>
-      </footer>
-    </center>
-  </div>
-</center>
+  </center>
 </body>
 
 </html>
